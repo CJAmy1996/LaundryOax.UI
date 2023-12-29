@@ -1,6 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { Customers } from 'src/app/models/customers.model';
 import { CustomersService } from 'src/app/services/customers.service';
+import { FormsModule } from '@angular/forms';
+
 
 
 @Component({
@@ -23,6 +25,8 @@ export class CustomersListComponent implements OnInit {
       }
       
     })
+
+    
   }
 
   

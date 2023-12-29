@@ -1,7 +1,9 @@
 import { HttpClient } from '@angular/common/http';
+import { HttpHeaders } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { environment } from 'src/environments/environment.development';
 import { Customers } from '../models/customers.model';
+import { Orders } from '../models/orders.model';
 import { Observable } from 'rxjs';
 
 @Injectable({
@@ -19,5 +21,5 @@ export class CustomersService {
   deleteAllCustomers(): Observable<Customers[]>{
     return this.http.delete<Customers[]>(this.apiUrl + "api/LaundryOax/{id}")
   }
-  
+ 
 }
